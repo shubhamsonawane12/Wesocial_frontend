@@ -1,0 +1,325 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Searchprofile_ */
+/* Main container */
+.Searchprofile_Main_profile_container {
+  height: 47rem;
+  /* border: 2px solid rgb(250, 14, 14); */
+  width: 97.8%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 2.5%;
+}
+
+/* Scrollbar styles */
+.Searchprofile_Main_profile_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.Searchprofile_Main_profile_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.Searchprofile_Main_profile_container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.Searchprofile_Main_profile_container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Profile container */
+.Searchprofile_profile_container {
+  background-color: #fff;
+  height: 36rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 2%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cover image container */
+.Searchprofile_coverimg_container {
+  height: 60%;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(173, 173, 173);
+  position: relative;
+}
+
+.Searchprofile_coverimg_container img {
+  height: 100%;
+  width: 100%;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  border-radius: 15px;
+}
+
+/* Button styles */
+.Searchprofile_coverimg_container button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  position: absolute;
+  top: 80%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  height: 13%;
+  width: 12rem;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+/* User container */
+.Searchprofile_User_container {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Username container */
+.Searchprofile_username_Container {
+  height: 11rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 7%;
+  padding-left: 3px;
+  margin-right: 15%;
+  padding-bottom: 0.5rem;
+}
+
+.Searchprofile_Name {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Searchprofile_Name p {
+  font-size: 30px;
+  font-weight: 720;
+  color: #000000;
+}
+
+/* Avatar styles */
+.Searchprofile_avatar_circle {
+  background-color: rgb(255, 255, 255);
+  height: 11.6rem;
+  width: 11.6rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-left: 3rem;
+}
+
+.Searchprofile_avatar {
+  width: 11rem !important;
+  height: 12rem !important;
+  z-index: 1;
+}
+
+.Searchprofile_avatarimg {
+  overflow: hidden;
+  width: 11rem !important;
+  height: 11rem !important;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.Searchprofile_filepond-container {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 30%;
+  margin-left: 40%;
+  font-size: 32px;
+  color: #5f5d5d;
+  z-index: 2;
+}
+
+.Searchprofile_camera_icon {
+  font-size: 2rem;
+}
+
+.Searchprofile_filepond--drop-label {
+  background-color: #adadad;
+  color: #023ccf;
+}
+
+.Searchprofile_filepond--label-action {
+  text-decoration-color: #babdc0;
+}
+
+.Searchprofile_filepond--panel-root {
+  background-color: #edf0f4;
+}
+
+/* Navigation bar styles */
+.Searchprofile_nav_container_box {
+  /* border:2px solid black; */
+  width: 100%;
+  height: 40%;
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+   align-items: flex-start; 
+  justify-content: space-between;
+}
+
+.Searchprofile_followbuttons{
+   /* border:2px solid black; */
+   width:87%;
+   height:35%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+  padding-right:4% ;
+
+
+} 
+@keyframes colorChange {
+  from {
+    background-color: #ffffff;
+    border-color: #3399FF;
+  }
+  to {
+    background-color: #2EB82E;
+    border-color: #2EB82E;
+  }
+}
+.message_btn{
+  width:8rem;
+  margin-left: 2rem;
+  height:1.8rem;
+  border-radius: 5px;
+  font-size: 15px;
+  border:1.5px solid rgba(0, 0, 0, 0.9);
+  background-color: rgba(241, 241, 244, 0.1);
+  color: rgba(0, 0, 0, );
+  cursor: pointer;
+  font-weight: 600;
+    z-index: 6;
+}
+
+.follow-button {
+  color: #3399FF;
+  font-family: "Helvetica";
+  font-size: 10pt;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #3399FF;
+  border-radius: 3px;
+  width: 85px;
+  height: 30px;
+  z-index: 6;
+  /* position: absolute; */
+  top: 50px;
+  left: 50px;
+  cursor: pointer;
+  transition: width 600ms ease-in-out, left 600ms ease-in-out, background-color 1000ms ease-in-out, border-color 1000ms ease-in-out;
+}
+
+.following {
+  color: #fff !important;
+  background-color: #2EB82E !important;
+  border-color: #2EB82E !important;
+  width: 130px !important;
+  left: -15px !important;
+  animation: colorChange 1s;
+}
+
+.Searchprofile_navbar {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+
+.Searchprofile_navbar ul {
+  display: inline-block;
+  float: none;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1%;
+}
+
+.Searchprofile_navbar a {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  color: #66686C;
+  font-size: 18px;
+  font-weight: 550;
+  width: 1rem;
+  height: 100%;
+  margin-right: 1rem;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.Searchprofile_navbar a:hover {
+  background-color: rgba(185, 185, 185, 0.4);
+}
+
+.Searchprofile_navbar a.active {
+  color: #0866FF;
+}
+
+.Searchprofile_navbar a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0866FF;
+}
+
+/* User post container */
+.Searchprofile_user_post_maincontainer {
+  height: auto;
+  width: 100%;
+}
+.message_maincontainer{
+  border:2px solid black;
+  position:absolute;
+  left:77.4rem;
+  top:28rem;
+  z-index: 10;
+}

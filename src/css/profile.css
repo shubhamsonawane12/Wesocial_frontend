@@ -1,0 +1,259 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.Main_profile_container {
+  height: 47rem;
+  /* border: 2px solid rgb(250, 14, 14); */
+  width: 97.8%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 2.5%;
+}
+
+/* Scrollbar styles */
+.Main_profile_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.Main_profile_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.Main_profile_container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.Main_profile_container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Profile container */
+.profile_container {
+  background-color: #fff;
+  height: 36rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 2%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cover image container */
+.coverimg_container {
+  height: 60%;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(173, 173, 173);
+  position: relative;
+}
+
+.coverimg_container img {
+  height: 100%;
+  width: 100%;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  border-radius: 15px;
+}
+
+/* Button styles */
+.coverimg_container button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  position: absolute;
+  top: 80%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  height: 13%;
+  width: 12rem;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+/* User container */
+.User_container {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Username container */
+.username_Container {
+  height: 11rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 7%;
+  padding-left: 3px;
+  margin-right: 15%;
+  padding-bottom: 0.5rem;
+}
+
+.Name {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Name p {
+  font-size: 30px;
+  font-weight: 720;
+  color: #000000;
+}
+
+/* Avatar styles */
+.avatar_circle {
+  background-color: rgb(255, 255, 255);
+  height: 11.6rem;
+  width: 11.6rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-left: 3rem;
+}
+
+.avatar {
+  width: 11rem !important;
+  height: 12rem !important;
+  z-index: 1;
+}
+
+.avatarimg {
+  overflow: hidden;
+  width: 11rem !important;
+  height: 11rem !important;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.filepond-container {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 30%;
+  margin-left: 40%;
+  font-size: 32px;
+  color: #5f5d5d;
+  z-index: 2;
+}
+
+.camera_icon {
+  font-size: 2rem;
+}
+
+.filepond--drop-label {
+  background-color: #adadad;
+  color: #023ccf;
+}
+
+.filepond--label-action {
+  text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+  background-color: #edf0f4;
+}
+
+/* Navigation bar styles */
+.nav_container_box {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.navbar {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+
+.navbar ul {
+  display: inline-block;
+  float: none;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1%;
+}
+
+.navbar a {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  color: #66686C;
+  font-size: 18px;
+  font-weight: 550;
+  width: 1rem;
+  height: 100%;
+  margin-right: 1rem;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.navbar a:hover {
+  background-color: rgba(185, 185, 185, 0.4);
+}
+
+.navbar a.active {
+  color: #0866FF;
+}
+
+.navbar a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0866FF;
+}
+
+/* User post container */
+.user_post_maincontainer {
+  height: auto;
+  width: 100%;
+
+  /* background-color: #bcccf4; */
+}
+/* .post_buttonbox input[type="file"] {
+
+ 
+} */
